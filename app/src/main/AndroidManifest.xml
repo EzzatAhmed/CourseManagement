@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.new_desgin">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/appppppp"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".home_assistant"></activity>
+        <activity android:name=".home_doctor" />
+        <activity android:name=".home_parent" />
+        <activity android:name=".compiler" />
+        <activity android:name=".computer_vision" />
+        <activity android:name=".expert_system" />
+        <activity android:name=".graghics" />
+        <activity android:name=".network" />
+        <activity android:name=".contacts" />
+        <activity android:name=".about_us" />
+        <activity android:name=".course" />
+        <activity android:name=".event" />
+        <activity android:name=".profile" />
+        <activity android:name=".home" />
+        <activity android:name=".signup" />
+        <activity android:name=".login" />
+        <activity android:name=".calender"/>
+        <activity android:name=".first_year"/>
+        <activity android:name=".scnd_year"/>
+        <activity android:name=".third_year"/>
+        <activity android:name=".forth_year"/>
+        <activity android:name=".forth_1_mate"/>
+        <activity android:name=".forth_2_mate"/>
+        <activity android:name=".third_1_mate"/>
+        <activity android:name=".third_2_mate"/>
+        <activity android:name=".scnd_2_mate"/>
+        <activity android:name=".scnd_1_mate"/>
+        <activity android:name=".first_2_mate"/>
+        <activity android:name=".first_1_mate"/>
+        <activity android:name=".scnd_year_mate"/>
+        <activity android:name=".first_year_mate"/>
+        <activity android:name=".third_year_mate"/>
+        <activity android:name=".forth_year_mate"/>
+        <activity android:name=".material_year"/>
+        <activity android:name=".splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+    </application>
+
+</manifest>

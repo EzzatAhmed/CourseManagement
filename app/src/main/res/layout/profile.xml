@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".profile"
+    android:background="#131718">
+
+
+    <ImageView
+        android:id="@+id/prof_pic"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="8dp"
+        android:src="@drawable/userphoto"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="TODO" />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/button_background"
+        android:drawableLeft="@drawable/courses24"
+        android:paddingLeft="15dp"
+        android:paddingRight="20dp"
+        android:text="Courses"
+        android:textColor="#fff"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/prof_pic" />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="72dp"
+        android:background="@drawable/button_background"
+        android:drawableLeft="@drawable/setting"
+        android:paddingLeft="10dp"
+        android:paddingRight="30dp"
+        android:text="Setting"
+        android:textColor="#fff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/prof_pic" />
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="104dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        app:cardBackgroundColor="#131718"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/prof_pic"
+        app:layout_constraintVertical_bias="0.161">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#131718"
+            android:gravity="left"
+            android:orientation="horizontal">
+
+            <ImageView
+
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:background="#131718"
+                android:padding="10dp"
+                android:src="@drawable/name24"
+                android:contentDescription="TODO" />
+
+            <TextView
+
+                android:id="@+id/prof_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="Amr Abd Elmoamen Elnakeeb"
+                android:textColor="#ffffff"
+                android:textSize="21sp" />
+
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:background="#131718"
+            android:padding="10dp"
+            android:src="@drawable/rightarrow24"
+            android:layout_gravity="right"
+            android:contentDescription="TODO" />
+
+
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        app:cardBackgroundColor="#131718"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#131718"
+            android:gravity="left"
+            android:orientation="horizontal">
+
+            <ImageView
+
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:background="#131718"
+                android:padding="10dp"
+                android:src="@drawable/email24"
+                android:contentDescription="TODO" />
+
+            <TextView
+
+                android:id="@+id/prof_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="amrelnakeeb64@gmail.com"
+                android:textColor="#ffffff"
+                android:textSize="21sp" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:background="#131718"
+            android:padding="10dp"
+            android:src="@drawable/rightarrow24"
+            android:layout_gravity="right"
+            android:contentDescription="TODO" />
+
+
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        app:cardBackgroundColor="#131718"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView2">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#131718"
+            android:gravity="left"
+            android:orientation="horizontal">
+
+            <ImageView
+
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:background="#131718"
+                android:padding="10dp"
+                android:src="@drawable/phone"
+                android:contentDescription="TODO" />
+
+            <TextView
+
+                android:id="@+id/prof_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="01146616604"
+                android:textColor="#ffffff"
+                android:textSize="21sp" />
+
+        </LinearLayout>
+        <ImageView
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:background="#131718"
+            android:padding="10dp"
+            android:src="@drawable/rightarrow24"
+            android:layout_gravity="right"
+            android:contentDescription="TODO" />
+
+
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        app:cardBackgroundColor="#131718"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView4">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#131718"
+            android:gravity="left"
+            android:orientation="horizontal">
+
+            <ImageView
+
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:background="#131718"
+                android:padding="10dp"
+                android:src="@drawable/id24"
+                android:contentDescription="TODO" />
+
+            <TextView
+
+                android:id="@+id/prof_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="316160208"
+                android:textColor="#ffffff"
+                android:textSize="21sp" />
+
+        </LinearLayout>
+        <ImageView
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:background="#131718"
+            android:padding="10dp"
+            android:src="@drawable/rightarrow24"
+            android:layout_gravity="right"
+            android:contentDescription="TODO" />
+
+
+    </android.support.v7.widget.CardView>
+
+
+
+</android.support.constraint.ConstraintLayout>
+</ScrollView>
